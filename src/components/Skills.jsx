@@ -6,7 +6,6 @@ import {
   Monitor,
   Palette,
   Code2,
-  Database,
 } from "lucide-react";
 
 const skillCategories = [
