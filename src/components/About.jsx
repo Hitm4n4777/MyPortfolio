@@ -1,9 +1,4 @@
-import {
-  Code2,
-  Lightbulb,
-  Rocket,
-  Zap,
-} from "lucide-react";
+import { Code2, Lightbulb, Rocket, Zap } from "lucide-react";
 
 const highlights = [
   {
@@ -31,48 +26,32 @@ const highlights = [
 function About() {
   return (
     <section id="about" className="about-section">
-
       <div className="section-container">
-
         {/* Section heading */}
 
         <div className="section-heading">
-
-          <span className="section-number">
-            01
-          </span>
+          <span className="section-number">01</span>
 
           <div>
-
-            <p className="section-label">
-              ABOUT ME
-            </p>
+            <p className="section-label">ABOUT ME</p>
 
             <h2>
               More than just
               <span> code.</span>
             </h2>
-
           </div>
-
         </div>
 
         {/* Main About Layout */}
 
         <div className="about-layout">
-
           {/* Image */}
 
           <div className="about-image-wrapper">
-
             <div className="about-image-glow" />
 
             <div className="about-image-frame">
-
-              <img
-                src="/profile/haider.jpg"
-                alt="Haider Ali"
-              />
+              <img src="/profile/haider.jpg" alt="Haider Ali" />
 
               <div className="image-overlay" />
 
@@ -80,84 +59,59 @@ function About() {
                 <span />
                 Haider Ali
               </div>
-
             </div>
-
           </div>
 
           {/* Content */}
 
           <div className="about-content">
-
             <p className="about-intro">
-              I'm Haider Ali — a developer who enjoys
-              building things across Multiple Software Fields.
+              I'm Haider Ali — A Full Stack developer Who likes to Build
+              Software Multiple Across Multiple Fields Of Software..
             </p>
 
             <p>
-              My work ranges from React and React Native
-              applications to websites, web apps, Python
-              automation, browser automation, web crawlers
-              and desktop applications.
+              My work ranges from React and React Native applications to
+              websites, web apps, Python automation, browser automation, web
+              crawlers and desktop applications.
             </p>
 
             <p>
-              I don't like limiting myself to a single
-              technology. I focus on understanding the
-              problem first, then choosing the right tools
-              to build a practical solution.
+              I am All about finding Simple Solutions to Complex Problems,
+              usinng different technologies and tools to make things work
+              better, faster and more efficiently.
             </p>
 
             <p>
-              Whether it's a mobile application, an
-              automated workflow, a website or a custom
-              desktop tool, I enjoy taking an idea from
+              Whether it's a mobile application, an automated workflow, a
+              website or a custom desktop tool, I enjoy taking an idea from
               concept to something that actually works.
             </p>
-
           </div>
-
         </div>
 
         {/* Highlights */}
 
         <div className="about-highlights">
-
           {highlights.map((item) => {
-
             const Icon = item.icon;
 
             return (
-              <article
-                className="highlight-card"
-                key={item.title}
-              >
-
+              <article className="highlight-card" key={item.title}>
                 <div className="highlight-icon">
                   <Icon size={20} />
                 </div>
 
                 <div>
+                  <h3>{item.title}</h3>
 
-                  <h3>
-                    {item.title}
-                  </h3>
-
-                  <p>
-                    {item.text}
-                  </p>
-
+                  <p>{item.text}</p>
                 </div>
-
               </article>
             );
-
           })}
-
         </div>
-
       </div>
-
     </section>
   );
 }

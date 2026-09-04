@@ -1089,11 +1089,13 @@ a {
   border:
     1px solid
     var(--border);
+  border-color:
+    rgba(35, 138, 255, 0.884);
 
   border-radius: 13px;
 
   background:
-    rgba(17, 24, 39, 0.3);
+    rgba(36, 80, 224, 0);               
 
   backdrop-filter:
     blur(14px);
@@ -1438,7 +1440,7 @@ a {
 
   border:
     1px solid
-    rgba(255, 255, 255, 0.05);
+    rgba(6, 107, 238, 0.836);
 
   color:
     var(--text-secondary);
@@ -1464,6 +1466,9 @@ a {
     var(--border);
 
   border-radius: 15px;
+  
+  border-color:
+    rgba(35, 138, 255, 0.884);
 
   background:
     rgba(255, 255, 255, 0.02);
@@ -1504,7 +1509,7 @@ a {
 
   border:
     1px solid
-    rgba(255, 255, 255, 0.07);
+    rgba(12, 125, 255, 0.377);
 
   border-radius: 7px;
 
@@ -1529,7 +1534,7 @@ a {
     var(--blue-light);
 
   border-color:
-    rgba(35, 136, 255, 0.3);
+    rgba(35, 138, 255, 0.39);
 
   background:
     rgba(35, 136, 255, 0.07);
@@ -1625,12 +1630,12 @@ a {
 
   border:
     1px solid
-    rgba(255, 255, 255, 0.07);
+    rgba(12, 131, 228, 0.842);
 
   border-radius: 7px;
 
   background:
-    rgba(255, 255, 255, 0.025);
+    rgba(19, 137, 184, 0.267);
 
   color:
     var(--text-muted);
@@ -1684,9 +1689,10 @@ a {
     var(--border);
 
   border-radius: 15px;
+  
 
   background:
-    rgba(255, 255, 255, 0.596);
+    rgb(24, 3, 3);
 
   transition:
     transform 0.3s ease,
@@ -1748,7 +1754,7 @@ a {
     linear-gradient(
       to bottom,
       transparent 40%,
-      rgba(5, 7, 13, 0.7)
+      rgba(9, 57, 199, 0.863)
     );
 }
 
@@ -1914,9 +1920,10 @@ a {
 
 .project-card {
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.342);
+  border: 1px solid rgba(20, 98, 201, 0.829);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(7, 88, 99, 0);
+  backdrop-filter: blur(12px);
 
   transition:
     transform 0.3s ease,
@@ -1927,7 +1934,7 @@ a {
 .project-card:hover {
   transform: translateY(-7px);
 
-  border-color: rgba(35, 136, 255, 0.4);
+  border-color: rgb(36, 138, 255);
 
   box-shadow:
     0 20px 60px rgba(0, 0, 0, 0.3),
@@ -2026,10 +2033,10 @@ a {
 .project-tech span {
   padding: 5px 9px;
 
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(13, 81, 206, 0.76);
   border-radius: 5px;
 
-  color: var(--text-muted);
+  color: var(--text-muted); 
 
   font-size: 9px;
 
@@ -2172,10 +2179,11 @@ a {
   min-height: 90px;
   padding: 20px;
 
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgb(2, 196, 255);
   border-radius: 12px;
 
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(46, 76, 175, 0);
+  backdrop-filter: blur(14px);
 
   color: white;
   text-decoration: none;
