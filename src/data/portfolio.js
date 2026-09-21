@@ -1,4 +1,5 @@
 export const projects = [
+  // Project tile 1: E-Commerce Mobile App
   {
     id: 1,
     title: "E-Commerce Mobile App",
@@ -16,6 +17,7 @@ export const projects = [
     demo: "",
   },
 
+  // Project tile 2: Weather App
   {
     id: 2,
     title: "Weather App",
@@ -34,6 +36,7 @@ export const projects = [
     demo: "",
   },
 
+  // Project tile 3: Developer Portfolio
   {
     id: 3,
     title: "Developer Portfolio",
@@ -52,6 +55,7 @@ export const projects = [
     demo: "",
   },
 
+  // Project tile 4: Business Web Application
   {
     id: 4,
     title: "Business Web Application",
@@ -70,6 +74,7 @@ export const projects = [
     demo: "",
   },
 
+  // Project tile 5: Python Automation
   {
     id: 5,
     title: "Python Automation",
@@ -87,6 +92,7 @@ export const projects = [
     demo: "",
   },
 
+  // Project tile 6: Web Crawler
   {
     id: 6,
     title: "Web Crawler",
@@ -104,6 +110,7 @@ export const projects = [
     demo: "",
   },
 
+  // Project tile 7: Desktop Application
   {
     id: 7,
     title: "Desktop Application",
@@ -121,6 +128,7 @@ export const projects = [
     demo: "",
   },
 
+  // Project tile 8: Graphic Design
   {
     id: 8,
     title: "Graphic Design",

@@ -1682,6 +1682,7 @@ a {
 ================================ */
 
 .project-card {
+  display: block;
   overflow: hidden;
 
   border:
@@ -2047,6 +2048,107 @@ a {
   border-color: rgba(35, 136, 255, 0.18);
 }
 
+/* =========================================
+   PROJECT DETAILS
+========================================= */
+
+.project-details {
+  min-height: 100vh;
+  padding: 120px 6% 90px;
+  background: var(--background);
+}
+
+.project-details-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 55px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.project-back-link:hover {
+  color: var(--blue-light);
+}
+
+.project-details-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 45px;
+  margin-bottom: 45px;
+}
+
+.project-details-header h1 {
+  margin: 14px 0 18px;
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+}
+
+.project-details-header p {
+  max-width: 620px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.project-details-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: 300px;
+}
+
+.project-details-tech span {
+  padding: 7px 10px;
+  border: 1px solid rgba(35, 136, 255, 0.35);
+  border-radius: 5px;
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+
+.project-details-image {
+  width: 100%;
+  max-height: 620px;
+  display: block;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.project-details-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+  padding: 11px 15px;
+  border: 1px solid rgba(35, 136, 255, 0.45);
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  transition: background 0.2s ease;
+}
+
+.project-details-action:hover {
+  background: rgba(35, 136, 255, 0.12);
+}
+
+.project-details-not-found h1 {
+  max-width: 600px;
+  margin: 18px 0 30px;
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1;
+}
+
 /* LINKS */
 
 .project-links {
@@ -2100,6 +2202,15 @@ a {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-details-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-details-tech {
+    justify-content: flex-start;
   }
 }
 

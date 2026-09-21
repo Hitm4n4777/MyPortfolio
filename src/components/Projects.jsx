@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { projects } from "../data/portfolio";
 
 export default function Projects() {
@@ -18,20 +19,17 @@ export default function Projects() {
   return (
     <section className="projects-section" id="projects">
       <div className="projects-container">
-
         <div className="projects-header">
           <div>
-            <span className="section-label">
-              04 / PROJECTS
-            </span>
+            <span className="section-label">04 / PROJECTS</span>
 
             <h2>
               Things I've <span>built.</span>
             </h2>
 
             <p>
-              A collection of applications, websites,
-              automation systems and creative work.
+              A collection of applications, websites, automation systems and
+              creative work.
             </p>
           </div>
 
@@ -51,7 +49,8 @@ export default function Projects() {
 
         <div className="projects-grid">
           {filteredProjects.map((project) => (
-            <article
+            <Link
+              to={`/projects/${project.id}`}
               className="project-card"
               key={project.id}
             >
@@ -62,35 +61,26 @@ export default function Projects() {
                   className="project-image"
                 />
 
-                <span className="project-category">
-                  {project.category}
-                </span>
+                <span className="project-category">{project.category}</span>
               </div>
 
               <div className="project-content">
-
                 <div className="project-title-row">
                   <h3>{project.title}</h3>
                   <ArrowUpRight size={20} />
                 </div>
 
-                <p className="project-description">
-                  {project.description}
-                </p>
+                <p className="project-description">{project.description}</p>
 
                 <div className="project-tech">
                   {project.technologies.map((technology) => (
-                    <span key={technology}>
-                      {technology}
-                    </span>
+                    <span key={technology}>{technology}</span>
                   ))}
                 </div>
-
               </div>
-            </article>
+            </Link>
           ))}
         </div>
-
       </div>
     </section>
   );
