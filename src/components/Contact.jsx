@@ -2,31 +2,22 @@ export default function Contact() {
   return (
     <section className="contact-section" id="contact">
       <div className="contact-container">
-
         <div className="contact-heading">
-          <span className="section-label">
-            05 / CONTACT
-          </span>
+          <span className="section-label">05 / CONTACT</span>
 
           <h2>
             Let's build something <span>great.</span>
           </h2>
 
           <p>
-            Have a project, idea, or opportunity in mind?
-            Let's talk and build something awesome together.
+            Have a project, idea, or opportunity in mind? Let's talk and build
+            something awesome together.
           </p>
         </div>
 
         <div className="contact-content">
-
-          <a
-            href="mailto:hitmn4430@gmail.com"
-            className="contact-card"
-          >
-            <div className="contact-icon">
-              @
-            </div>
+          <a href="mailto:hitmn4430@gmail.com" className="contact-card">
+            <div className="contact-icon">@</div>
 
             <div className="contact-info">
               <span>Email</span>
@@ -42,9 +33,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="contact-card"
           >
-            <div className="contact-icon">
-              GH
-            </div>
+            <div className="contact-icon">GH</div>
 
             <div className="contact-info">
               <span>GitHub</span>
@@ -55,25 +44,21 @@ export default function Contact() {
           </a>
 
           <a
-            href=""
+            href="https://www.linkedin.com/in/haider-ali-57093a330"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"
           >
-            <div className="contact-icon">
-              IN
-            </div>
+            <div className="contact-icon">IN</div>
 
-            {/* <div className="contact-info">
+            <div className="contact-info">
               <span>LinkedIn</span>
               <strong>Let's connect</strong>
-            </div> */}
+            </div>
 
             <span className="contact-arrow">↗</span>
           </a>
-
         </div>
-
       </div>
     </section>
   );

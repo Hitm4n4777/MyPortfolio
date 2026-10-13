@@ -6,6 +6,10 @@ export default function ProjectDetails() {
   const { projectId } = useParams();
   const project = projects.find((item) => String(item.id) === projectId);
 
+  const overview = project?.overview || project?.description || "";
+  const features = project?.features || [];
+  const challenge = project?.challenge || "";
+
   if (!project) {
     // Missing project state
     return (
@@ -52,6 +56,27 @@ export default function ProjectDetails() {
           src={project.image}
           alt={project.title}
         />
+
+        <div className="project-details-body">
+          <div className="project-details-panel">
+            <h2>Overview</h2>
+            <p>{overview}</p>
+          </div>
+
+          <div className="project-details-panel">
+            <h2>Key features</h2>
+            <ul>
+              {features.map((feature) => (
+                <li key={feature}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="project-details-panel">
+            <h2>Challenge</h2>
+            <p>{challenge}</p>
+          </div>
+        </div>
 
         {/* Optional live project link */}
         {project.demo && (
