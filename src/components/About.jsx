@@ -69,6 +69,12 @@ function About() {
               I'm Haider Ali — A Full Stack developer Who likes to Build
               Software Multiple Across Multiple Fields Of Software..
             </p>
+            <p>
+              For My Expreience in Development, I took a early start in
+              Development (when i was in 8th Grade). So I have Some Experience
+              In Software Development. I am Always On the Journey to Learn
+              Something New and Improve my Skillset.
+            </p>
 
             <p>
               My work ranges from React and React Native applications to
@@ -77,15 +83,9 @@ function About() {
             </p>
 
             <p>
-              I am All about finding Simple Solutions to Complex Problems,
-              usinng different technologies and tools to make things work
-              better, faster and more efficiently.
-            </p>
-
-            <p>
               Whether it's a mobile application, an automated workflow, a
-              website or a custom desktop tool, I enjoy taking an idea from
-              concept to something that actually works.
+              website or a custom desktop tool, I can Make the software of youre
+              Desire and Exceede expectations.
             </p>
           </div>
         </div>

@@ -15,12 +15,7 @@ const skillCategories = [
     title: "Mobile Development",
     description:
       "Building responsive and polished mobile applications with modern React-based technologies.",
-    technologies: [
-      "React Native",
-      "Expo",
-      "JavaScript",
-      "React",
-    ],
+    technologies: ["React Native", "Expo", "JavaScript", "React"],
   },
 
   {
@@ -29,12 +24,7 @@ const skillCategories = [
     title: "Web Development",
     description:
       "Creating modern websites and interactive web experiences with clean, responsive interfaces.",
-    technologies: [
-      "React",
-      "JavaScript",
-      "HTML",
-      "CSS",
-    ],
+    technologies: ["React", "JavaScript", "HTML", "CSS"],
   },
 
   {
@@ -43,12 +33,7 @@ const skillCategories = [
     title: "Python Automation",
     description:
       "Automating repetitive workflows, browser tasks, data collection and complex processes.",
-    technologies: [
-      "Python",
-      "Selenium",
-      "Requests",
-      "Automation",
-    ],
+    technologies: ["Python", "Selenium", "Requests", "Automation"],
   },
 
   {
@@ -57,12 +42,7 @@ const skillCategories = [
     title: "Web Crawlers",
     description:
       "Building systems that collect, process and organize information from websites.",
-    technologies: [
-      "Python",
-      "Selenium",
-      "Web Scraping",
-      "APIs",
-    ],
+    technologies: ["Python", "Selenium", "Web Scraping", "APIs"],
   },
 
   {
@@ -71,12 +51,7 @@ const skillCategories = [
     title: "Desktop Applications",
     description:
       "Developing desktop software with practical interfaces and custom functionality.",
-    technologies: [
-      "C++",
-      "Qt",
-      "Java",
-      "Python",
-    ],
+    technologies: ["C++", "Qt", "Java", "Python"],
   },
 
   {
@@ -85,12 +60,7 @@ const skillCategories = [
     title: "Graphic Design",
     description:
       "Designing visual assets, interfaces and digital graphics with a focus on clean presentation.",
-    technologies: [
-      "UI Design",
-      "Visual Design",
-      "Branding",
-      "Graphics",
-    ],
+    technologies: ["UI Design", "Visual Design", "Branding", "Graphics"],
   },
 ];
 
@@ -112,136 +82,81 @@ const additionalSkills = [
 function Skills() {
   return (
     <section id="skills" className="skills-section">
-
       <div className="section-container">
-
         {/* Heading */}
 
         <div className="section-heading">
-
-          <span className="section-number">
-            02
-          </span>
+          <span className="section-number">03</span>
 
           <div>
-
-            <p className="section-label">
-              SKILLS & EXPERTISE
-            </p>
+            <p className="section-label">SKILLS & EXPERTISE</p>
 
             <h2>
-              What I
-              <span> build.</span>
+              What I<span> build.</span>
             </h2>
-
           </div>
-
         </div>
 
         {/* Intro */}
 
         <div className="skills-intro">
-
           <p>
-            I work across multiple areas of software
-            development, from mobile applications and
-            websites to automation systems and custom
-            desktop software.
+            I work across multiple areas of software development, from mobile
+            applications and websites to automation systems and custom desktop
+            software.
           </p>
-
         </div>
 
         {/* Skill Cards */}
 
         <div className="skills-grid">
-
           {skillCategories.map((skill) => {
-
             const Icon = skill.icon;
 
             return (
-              <article
-                className="skill-card"
-                key={skill.title}
-              >
-
+              <article className="skill-card" key={skill.title}>
                 <div className="skill-card-top">
-
-                  <span className="skill-number">
-                    {skill.number}
-                  </span>
+                  <span className="skill-number">{skill.number}</span>
 
                   <div className="skill-icon">
                     <Icon size={21} />
                   </div>
-
                 </div>
 
-                <h3>
-                  {skill.title}
-                </h3>
+                <h3>{skill.title}</h3>
 
-                <p>
-                  {skill.description}
-                </p>
+                <p>{skill.description}</p>
 
                 <div className="skill-tags">
-
-                  {skill.technologies.map(
-                    (technology) => (
-                      <span key={technology}>
-                        {technology}
-                      </span>
-                    )
-                  )}
-
+                  {skill.technologies.map((technology) => (
+                    <span key={technology}>{technology}</span>
+                  ))}
                 </div>
-
               </article>
             );
-
           })}
-
         </div>
 
         {/* Technology Stack */}
 
         <div className="technology-stack">
-
           <div className="stack-header">
-
             <div>
+              <p className="section-label">TECHNOLOGY STACK</p>
 
-              <p className="section-label">
-                TECHNOLOGY STACK
-              </p>
-
-              <h3>
-                Tools I work with
-              </h3>
-
+              <h3>Tools I work with</h3>
             </div>
 
             <Code2 size={24} />
-
           </div>
 
           <div className="technology-list">
-
-            {additionalSkills.map(
-              (skill) => (
-                <span key={skill}>
-                  {skill}
-                </span>
-              )
-            )}
-
+            {additionalSkills.map((skill) => (
+              <span key={skill}>{skill}</span>
+            ))}
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }
