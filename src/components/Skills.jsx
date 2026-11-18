@@ -86,7 +86,7 @@ function Skills() {
         {/* Heading */}
 
         <div className="section-heading">
-          <span className="section-number">03</span>
+          <span className="section-number">04</span>
 
           <div>
             <p className="section-label">SKILLS & EXPERTISE</p>

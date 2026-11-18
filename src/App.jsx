@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Background from "./components/background";
 import ProjectDetails from "./components/ProjectDetails";
-import Education from "./components/Education";
+// import Education from "./components/Education";
 import { Route, Routes } from "react-router-dom";
 import Exp from "./components/Exp";
 
@@ -23,7 +23,7 @@ function App() {
             <main>
               <Hero />
               <About />
-              <Education />
+              {/* <Education /> */}
               <Exp />
               <Skills />
               <Projects />

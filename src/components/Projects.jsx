@@ -21,7 +21,7 @@ export default function Projects() {
       <div className="projects-container">
         <div className="projects-header">
           <div>
-            <span className="section-label">04 / PROJECTS</span>
+            <span className="section-label">05 / PROJECTS</span>
 
             <h2>
               Things I've <span>built.</span>
